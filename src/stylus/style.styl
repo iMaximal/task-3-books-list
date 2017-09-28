@@ -1,0 +1,95 @@
+body
+    font-size 12px
+    line-height 1.4em
+    background-color #EBEBEB
+    color #000000
+    font-family Arial, Helvetica, sans-serif
+    margin 0px
+    padding 0px
+
+#app
+    background-color #FFFFFF
+    width 920px
+    margin 10px auto
+    text-align left
+    padding 0px 10px 0px 15px
+    box-shadow 0 0 10px #B1B1B1
+
+.header
+    padding-bottom 10px
+
+.header h1
+    padding 15px 0px 10px 0px
+    color #606060
+
+.authors
+    font-size 12px
+    text-transform uppercase
+    font-weight bold
+    margin-bottom 18px
+    letter-spacing 1.2px
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+
+.books
+    font-size 16px
+    color #ff7e00
+    text-decoration none
+
+.book-list
+    list-style none
+    margin 0
+    padding 0
+
+.book-list > li + li
+    border-top: 1px solid #EEEEEE;
+
+.book-list li
+    margin-bottom 10px
+    padding 5px 10px
+
+.controls-container
+    margin-top 10px
+
+.controls
+    color #828282
+
+    &:hover
+        color: #d56e00
+
+.edit-area
+    box-sizing border-box
+    min-height: 30px;
+    height 32px
+    line-height 32px
+    outline none
+    box-shadow none
+    width: 98%;
+    border 1px solid #888
+    margin 0
+    padding 5px
+    display block
+    resize none
+    &:focus
+        border 1px solid #5199db
+    &::-webkit-input-placeholder
+        color #d9d9d9
+    &::-moz-placeholder
+        color #d9d9d9
+    &:-ms-input-placeholder
+        color #d9d9d9
+    &::-ms-clear
+        display none
+
+.edit-area[placeholder]
+    text-overflow ellipsis
+
+/**
+ Some adaptive
+ */
+@media screen and (max-width 930px)
+    #app
+        width 98%
+
+
