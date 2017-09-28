@@ -9,8 +9,6 @@ npm install
 ## Usage
 
 ```bash
-set NODE_ENV=production
-gulp dist
 npm start
 http://localhost:3000/
 ```
