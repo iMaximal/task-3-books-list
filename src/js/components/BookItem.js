@@ -26,7 +26,7 @@ export default class BookItem extends Component {
     }
 
 
-    toggleBookEditing = (id, text, event) => {
+    toggleBookEditing = (event) => {
         event.preventDefault()
         this.setState({editing: true})
     }
@@ -44,7 +44,7 @@ export default class BookItem extends Component {
 
         const controlButtons = (
             <div className="controls-container">
-                <a onClick={this.toggleBookEditing.bind(this, id, name)}
+                <a onClick={this.toggleBookEditing}
                    href=""
                    className="controls"
                    title="Edit">Edit</a>&nbsp;

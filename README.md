@@ -1,17 +1,7 @@
 
 # Список книг
 
-## Installation
-```bash
-npm install
-```
 
-## Usage
-
-```bash
-npm start
-http://localhost:3000/
-```
 
 
 ## Задание
