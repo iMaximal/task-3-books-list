@@ -27,7 +27,7 @@ export default class BookEditForm extends Component {
             name = 'Неизвестная книга'
         }
 
-        this.props.onSave(id, author, name, event)
+        this.props.onSave(id, author, name)
         if (this.props.newBook) {
             this.setState({
                 author: '',
@@ -78,7 +78,7 @@ export default class BookEditForm extends Component {
                     <a onClick={this.handleSubmit.bind(this, id, author, bookName)}
                        href=""
                        className="controls"
-                       title="Edit">
+                       title="Save">
                         Save
                     </a>
                 </div>

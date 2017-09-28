@@ -9,9 +9,7 @@ import {
 export default class AddBookForm extends Component {
 
     handleSave = (id, author, bookName) => {
-        if (author.length !== 0 && bookName.length !== 0) {
             this.props.dispatch(addBook(author, bookName))
-        }
     }
 
     render() {

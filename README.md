@@ -1,7 +1,19 @@
 
 # Список книг
 
+## Установка
+```bash
+npm install
+npm i -g gulp
+```
 
+## Использование
+
+```bash
+set NODE_ENV=production
+gulp dist
+npm run start
+```
 
 
 ## Задание

@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const path = require('path')
+const rename = require('gulp-rename')
 const named = require('vinyl-named')
 const plumber = require('gulp-plumber')
 const uglify = require('gulp-uglify')
@@ -23,7 +24,7 @@ gulp.task('clean-js', function () {
 })
 
 gulp.task('react', () => {
-    return gulp.src('src/bootstrap.js')
+    return gulp.src('src/js/index.js')
         .pipe(named())
         .pipe(debug({title: 'after named:'}))
         .pipe(plumber())
@@ -31,6 +32,7 @@ gulp.task('react', () => {
         .pipe(webpackStream(webpackConfig, webpack))
         .pipe(debug({title: 'after webpack:'}))
         .pipe(gulpif(!DEBUG, uglify()))
+        .pipe(rename('bootstrap.js'))
         .pipe(gulp.dest(path.join('public', 'js')))
 })
 

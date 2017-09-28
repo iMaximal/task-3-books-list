@@ -3,8 +3,9 @@
 .DS_Store
 backup
 dist
-node_modules
+public
 manifest
+node_modules
 
 *.log
 *.lock
